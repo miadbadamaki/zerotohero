@@ -1,47 +1,45 @@
 package com.example.myapplication
-
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.myapplication.ui.theme.MyApplicationTheme
-
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import android.content.Intent
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            MyApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+        setContentView(R.layout.activity_main)
+        val inputText = findViewById<EditText>(R.id.inputText)
+        val btnConvert = findViewById<Button>(R.id.btnConvert)
+        val outputText = findViewById<TextView>(R.id.outputText)
+        val btnToggle = findViewById<Button>(R.id.btnToggleTheme)
+
+
+         fun toggleTheme() {
+
+            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_NO) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+
+            else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
         }
-    }
-}
+        btnToggle.setOnClickListener{
+            toggleTheme()
+        }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyApplicationTheme {
-        Greeting("Android")
+        btnConvert.setOnClickListener {
+            val text = inputText.text.toString()
+            val upperText = text.uppercase()
+            outputText.text = upperText
+        }
+        val btnGo = findViewById<Button>(R.id.btnGoToSecondPage)
+        btnGo.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+        startActivity(intent)
+        }
     }
+
 }

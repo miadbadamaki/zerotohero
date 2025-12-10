@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">first try</string>
+    <string name="add_task">Add Task</string>
+    <string name="btn_dark_mode">Dark mode</string>
+    <string name="btn_turn_Uppercase">turn into Uppercase</string>
+    <string name="input_take_user_text">enter your text here</string>
+    <string name="btn_second_page">go to second Activity</string>
+    <string name="welcomePage"> welcome to this Activity</string>
+    <string name="hint_addNewTask">New task....</string>
+    <string name="btn_New_Task">Add a task</string>
 </resources>

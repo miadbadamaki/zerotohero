@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnToggleTheme"
+        android:layout_width="364dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#500D57"
+        android:text="@string/btn_dark_mode"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:rippleColor="@color/white" />
+
+    <EditText
+        android:id="@+id/inputText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:textColor="@color/white"
+        android:hint="@string/input_take_user_text" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_turn_Uppercase" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnGoToSecondPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/btn_second_page"/>
+
+</LinearLayout>
