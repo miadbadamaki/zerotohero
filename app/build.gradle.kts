@@ -5,10 +5,12 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.myapplication"
     compileSdk {
         version = release(36)
     }
+
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -58,6 +60,7 @@ dependencies {
     implementation(libs.androidx.legacy.support.v4)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +69,10 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.activity:activity-compose:1.3.1")
+    implementation("androidx.compose.animation:animation:1.1.1")
+    implementation("androidx.compose.foundation:foundation:1.1.1")
+    implementation("androidx.compose.material:material:1.1.1")
+    implementation("androidx.compose.runtime:runtime:1.1.1")
+    implementation("androidx.compose.ui:ui:1.1.1")
 }

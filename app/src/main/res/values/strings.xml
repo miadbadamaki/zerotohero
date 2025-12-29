@@ -1,11 +1,25 @@
 <resources>
     <string name="app_name">first try</string>
-    <string name="add_task">Add Task</string>
+    <string name="txt_Submit">Submit</string>
     <string name="btn_dark_mode">Dark mode</string>
     <string name="btn_turn_Uppercase">turn into Uppercase</string>
     <string name="input_take_user_text">enter your text here</string>
     <string name="btn_second_page">go to second Activity</string>
     <string name="welcomePage"> welcome to this Activity</string>
     <string name="hint_addNewTask">New task....</string>
-    <string name="btn_New_Task">Add a task</string>
+    <string name="hint_password">enter your password..</string>
+    <string name="hint_username">enter your username..</string>
+    <string name="txt_welcome_loginPage">welcome to this screen enter your username and password</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="txt_welcome">wow you made it ! welcome to this page.</string>
+    <string name="previous">Previous</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="second_fragment_text">hello this is second fragment </string>
+    <string name="btn_second_fragment">show second fragment</string>
+
+
 </resources>
