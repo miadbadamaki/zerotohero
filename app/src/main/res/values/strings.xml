@@ -4,4 +4,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="writer_name">Steeve Jobs</string>
     <string name="writer_quote">\"Stay hungry, stay foolish\"</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="roll">Roll</string>
 </resources>
